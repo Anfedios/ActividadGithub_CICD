@@ -7,7 +7,8 @@ const config = {
 	kit: {
 		adapter: adapter({ fallback: '404.html', strict: false }),
 		paths: {
-			base: dev ? '' : '/ActividadGithub_CICD'
+			base: '',
+			relative: true
 		},
 		prerender: {
 			entries: []
