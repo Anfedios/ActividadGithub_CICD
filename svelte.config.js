@@ -5,12 +5,12 @@ const dev = process.argv.includes('dev');
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
-		adapter: adapter(),
+		adapter: adapter({ fallback: 'index.html', strict: false }),
 		paths: {
 			base: dev ? '' : '/ActividadGithub_CICD'
 		},
 		prerender: {
-			entries: ['*']
+			entries: []
 		}
 	}
 };
